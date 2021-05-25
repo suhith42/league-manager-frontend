@@ -12,4 +12,4 @@ npm install
 Go back to the [backend](https://github.com/suhith42/league-manager-cw) component and run it from there
 
 
-![Home page](src/assets/homepage-screenshot.png)
+![Home page](src/assets/homepage-screensho2t.png)
