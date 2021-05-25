@@ -1,0 +1,17 @@
+<app-header></app-header>
+
+<h1>Premier League Headlines</h1>
+<div class="news-cards">
+    
+    <div class='news-container' *ngFor='let newsItem of newsData'>
+        <a href="{{newsItem.url}}" target="_blank" rel="noopener noreferrer">
+            <img alt="" class="newscard-image" src="{{newsItem.urlToImage}}" onerror="this.src='assets/no-image.jpg'" >
+            <div class="newscard-title">{{newsItem.title}}</div>
+            <div class="newscard-description">{{newsItem.source.name}}</div>
+        </a>
+
+    </div>
+</div>
+
+
+

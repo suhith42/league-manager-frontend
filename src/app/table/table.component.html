@@ -1,0 +1,62 @@
+<!-- sort selector -->
+<div class="sort-selector">
+  <mat-form-field class="sort-select">
+    <mat-label>Sort table by </mat-label>
+    <mat-select  [(value)]="selectedColumn" (selectionChange)="changeSortedColumn()">
+      <mat-option *ngFor="let column of sortColumns" [value]="column.value">
+        {{column.title}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+<!-- league table -->
+<table mat-table [dataSource]="tableData" class="mat-elevation-z8" matSort  matSortActive="points" matSortDirection="desc">
+  <ng-container matColumnDef="name">
+    <th mat-header-cell *matHeaderCellDef> Club </th>
+    <td mat-cell *matCellDef="let row"> {{row.name}} </td>
+  </ng-container>
+
+    <ng-container matColumnDef="matches">
+      <th mat-header-cell *matHeaderCellDef> Matches </th>
+      <td mat-cell *matCellDef="let row"> {{row.matches}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="wins">
+      <th mat-header-cell *matHeaderCellDef> Won </th>
+      <td mat-cell *matCellDef="let row"> {{row.wins}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="draws">
+      <th mat-header-cell *matHeaderCellDef> Drawn </th>
+      <td mat-cell *matCellDef="let row"> {{row.draws}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="defeats">
+        <th mat-header-cell *matHeaderCellDef> Lost </th>
+        <td mat-cell *matCellDef="let row"> {{row.defeats}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="scoredGoals">
+        <th mat-header-cell *matHeaderCellDef> GF </th>
+        <td mat-cell *matCellDef="let row"> {{row.scoredGoals}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="concededGoals">
+        <th mat-header-cell *matHeaderCellDef> GA </th>
+        <td mat-cell *matCellDef="let row"> {{row.concededGoals}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="goalDifference">
+        <th mat-header-cell *matHeaderCellDef> GD </th>
+        <td mat-cell *matCellDef="let row"> {{row.goalDifference}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="points">
+        <th mat-header-cell *matHeaderCellDef> Points </th>
+        <td mat-cell *matCellDef="let row" > {{row.points}} </td>
+      </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
+

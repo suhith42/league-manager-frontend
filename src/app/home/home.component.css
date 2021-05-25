@@ -1,0 +1,47 @@
+*{margin: 0; padding: 0;}
+
+.main{
+    
+    height: 100%;  
+    color: '#fff';
+    background-image: url("../../assets/football-image-darken.jpg");  
+    background-size: 100% ;  
+    
+    
+}
+.content{
+    position: absolute;
+    margin-top: 15%;
+    margin-left: 5%;
+}
+
+.title{
+    font-family: 'Prompt', sans-serif;
+    font-size: 5vmax;
+    line-height: 5vmax;    
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px #69696994;
+    margin-bottom: 10vh;
+    
+}
+.myButton {
+    box-shadow: 4px 6px 15px -2px #23395e;
+    background-color:rgb(244, 67, 54);
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family: 'Rubik', sans-serif;
+    font-size:2vw;
+    text-decoration:none;
+    height: 7vh;
+    line-height: 7vh;
+    width: 15vw;
+    text-align: center;
+    position: absolute;
+    border-radius: 4px;
+  }
+  .myButton:hover {
+    box-shadow: 4px 6px 15px -2px #192944;
+
+  }
+

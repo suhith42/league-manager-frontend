@@ -1,0 +1,38 @@
+.mat-table{
+    width: 100%;
+    background-color: #273746;
+    
+
+  /*margin-left: auto;*/
+  /*margin-right: auto;*/
+}
+
+.mat-header-row{
+    background-color: #E95B3CFF;
+    border: 0;
+}
+.mat-row{
+    background-color: #273746;
+
+}
+.mat-cell{
+    color: #ECF0F1;
+    background-color: #273746;
+    margin: 0;
+}
+
+.mat-column-name{
+    flex: 0 0 10% !important;
+    width: 18%
+}
+.mat-column-matches, .mat-column-wins, .mat-column-wins, .mat-column-draws, .mat-column-defeats,
+.mat-column-scoredGoals, .mat-column-concededGoals, .mat-column-goalDifference, .mat-column-points{
+    flex: 0 0 10% !important;
+    width: 10% !important;
+}
+
+.mat-option,.mat-option:selected{
+    color: #E95B3CFF;
+}
+
+

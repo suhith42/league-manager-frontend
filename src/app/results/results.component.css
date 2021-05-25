@@ -1,0 +1,26 @@
+@import '../table/table.component.css';
+
+.mat-table{
+    width: 100%;
+    background-color: transparent;
+}
+
+.mat-column-team1 {
+    text-align: right;
+    padding-right: 5%;
+}
+
+.mat-column-team2{
+    padding-left: 5%;
+}
+
+
+.mat-column-scores {
+    text-align: center;
+}
+
+.mat-stroked-button{
+    color: #E95B3CFF;
+}
+
+
